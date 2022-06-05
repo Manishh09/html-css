@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms and Input Types</title>
+</head>
+<body>
+    <form action="process.php">
+        <!-- Text -->
+        <div>
+            <label for="name">Name</label><br>
+            <input type="text" name="name" id="name">
+        </div>
+        <!-- Email -->
+        <!-- placeholder tag is introduced in HTML5 -->
+        <div>
+            <label for="email">Email</label><br>
+            <input type="email" name="email" id="email" placeholder="ex: abc@gmail.com">
+        </div>
+        <!-- Textarea -->
+        <div>
+            <label for="address">Address</label><br>
+            <textarea name="address" id="address" cols="30" rows="10"></textarea>
+        </div>
+        <!-- number -->
+        <div>
+            <label for="age">Age</label>
+            <input type="number" name="age" id="age">
+        </div>
+         <!--select  -->
+        <div>
+             <label for="gender">Gender</label>
+             <select name="gender" id="select">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+        </div>
+        <!-- date/datetime/datetime-local -->
+        <div>
+            <label for="dob">Date of Birth</label>
+            <input type="date" name="dob" id="dob">
+        </div>
+        <!-- radio -->
+        <div>
+            <label for="membership">Membership</label><br>
+            <input type="radio" name="simple" id="simple" value="simple"> Simple
+            <input type="radio" name="standard" id="standard" value="standard"> Standard
+            <input type="radio" name="premium" id="premium" value="premium"> Premium 
+        </div>
+        <!-- checkbox -->
+        <div>
+            <label for="hobies">Hobies</label><br>
+            <input type="checkbox" name="basketbal" id="hobies" value="basketbal"> Basketbal
+            <input type="checkbox" name="chess" id="hobies" value="chess"> Chess
+            <input type="checkbox" name="cricket" id="hobies" value="cricket"> Cricket 
+        </div>
+        <!-- URL -->
+        <div>
+            <label for="website">Website</label><br>
+            <input type="url" name="website" id="website" value="https://www.google.com">
+        </div>
+
+        <!-- Input - submit -->
+        <input type="submit" value="Submit">        
+        <!-- Input reset -->
+        <input type="reset" value="Reset">
+    </form>
+    
+    
+</body>
+</html>
